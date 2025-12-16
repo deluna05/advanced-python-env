@@ -1,6 +1,16 @@
-health = int(input())
+N = int(input())
 
-if health <= 0:
-    print(False)
+total = 0
+
+if N >= 1:
+    i = 1
+    while i <= N:
+        total = total + i
+        i = i + 1
 else:
-    print(True)
+    i = N
+    while i <= 1:
+        total = total + i
+        i = i + 1
+
+print(total)
